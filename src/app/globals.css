@@ -4,11 +4,11 @@
 
 * {
   font-family: "Kanit", sans-serif !important;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
 }
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -36,4 +36,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

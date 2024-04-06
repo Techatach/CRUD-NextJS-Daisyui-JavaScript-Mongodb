@@ -3,9 +3,36 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar-start bg-base-100 d-flex flex justify-start w-full shadow-lg p-3 mb-5 bg-body rounded text-center">
       <div className="flex-1">
-        <Link href={`/`} className="btn btn-ghost text-xl">Cairocoders</Link>
+        <Link href="/" className="btn btn-ghost text-xl max-w-96">
+          หลักสูตรรัฐประศาสนศาสตร์
+        </Link>
+      </div>
+      <div className="flex-1">
+        <Link href="#" className="btn btn-ghost text-xl">
+          หน้าหลัก
+        </Link>
+      </div>
+      <div className="flex-1">
+        <Link href="#" className="btn btn-ghost text-xl">
+          เกี่ยวกับ
+        </Link>
+      </div>
+      <div className="flex-1">
+        <Link href="#" className="btn btn-ghost text-xl">
+          อาจารย์ผู้รับผิดชอบหลักสูตร
+        </Link>
+      </div>
+      <div className="flex-1">
+        <Link href="#" className="btn btn-ghost text-xl">
+          AI ตรวจวินิจฉัยโรค
+        </Link>
+      </div>
+      <div className="flex-1">
+        <Link href="#" className="btn btn-ghost text-xl">
+          ติดต่อ
+        </Link>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">

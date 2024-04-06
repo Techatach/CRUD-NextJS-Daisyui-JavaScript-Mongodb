@@ -23,12 +23,11 @@ export default async function ProductssList() {
   const { products } = await getProducts();
 
   return (
-    <>
+    <div className="shadow-lg p-3 mb-5 bg-body rounded">
       <div className="overflow-x-auto">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-center items-center">
           <h1 className="font-bold py-10 text-2xl">
-            Next.js 14 CRUD Crate, Read, Update and Delete - MongoDB Daisyui
-            TailwindCSS
+            การติดตามและประเมินผลยุทธศาสตร์ชาติ 20 ปี
           </h1>
         </div>
         <div className="text-right">
@@ -76,7 +75,7 @@ export default async function ProductssList() {
                     </div>
                   </div>
                 </td>
-                <td>${rs.price}</td>
+                <td>฿{rs.price}</td>
                 <td>{rs.category}</td>
                 <th>
                   <Link href={`/editProduct/${rs._id}`}>
@@ -89,6 +88,6 @@ export default async function ProductssList() {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 }

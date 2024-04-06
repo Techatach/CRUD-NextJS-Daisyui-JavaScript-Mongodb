@@ -1,10 +1,12 @@
-import ProductssList from "@/components/ProductsList";
 import React from "react";
+// import ProductsList from "@/components/ProductsList";
+import Main from "@/components/Main";
 
 export default function page() {
   return (
     <div>
-      <ProductssList />
+      {/* <ProductsList /> */}
+      <Main />
     </div>
   );
 }

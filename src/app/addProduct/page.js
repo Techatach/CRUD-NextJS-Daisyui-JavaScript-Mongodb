@@ -31,6 +31,7 @@ export default function AddProduct() {
 
       if (res.ok) {
         router.push("/products");
+        // router.push("/");
       } else {
         throw new Error("Failed to create a Product");
       }
