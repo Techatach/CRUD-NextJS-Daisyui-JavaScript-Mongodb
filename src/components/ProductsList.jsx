@@ -35,23 +35,23 @@ export default async function ProductssList() {
             Add Product
           </Link>
         </div>
-        <table className="table">
+        <table className="table">          
           <thead>
             <tr>
               <th>
                 <label>
                   <input type="checkbox" className="checkbox" />
                 </label>
-              </th>
+              </th>              
               <th>Name</th>
               <th>Price</th>
               <th>Category</th>
-              <th />
+              <th />              
             </tr>
-          </thead>
+          </thead>         
           <tbody>
-            {products.map((rs) => (
-              <tr className="hover" key={rs._id}>
+            {products.map((element) => (
+              <tr className="hover" key={element._id}>
                 <th>
                   <label>
                     <input type="checkbox" className="checkbox" />
@@ -62,8 +62,8 @@ export default async function ProductssList() {
                     <div className="avatar">
                       <div className="mask mask-squircle w-12 h-12">
                         <Image
-                          src={rs.image}
-                          alt={rs.name}
+                          src={element.image}
+                          alt={element.name}
                           width={80}
                           height={80}
                           className="rounded-lg"
@@ -71,17 +71,17 @@ export default async function ProductssList() {
                       </div>
                     </div>
                     <div>
-                      <div className="font-bold">{rs.name}</div>
+                      <div className="font-bold">{element.name}</div>
                     </div>
                   </div>
                 </td>
-                <td>฿{rs.price}</td>
-                <td>{rs.category}</td>
+                <td>฿{element.price}</td>
+                <td>{element.category}</td>
                 <th>
-                  <Link href={`/editProduct/${rs._id}`}>
+                  <Link href={`/editProduct/${element._id}`}>
                     <button className="btn btn-primary">Edit</button>
                   </Link>
-                  <RemoveBtn id={rs._id} />
+                  <RemoveBtn id={element._id} />
                 </th>
               </tr>
             ))}

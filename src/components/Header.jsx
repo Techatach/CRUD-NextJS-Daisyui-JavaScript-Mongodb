@@ -28,6 +28,34 @@ export default function Header() {
               <li class="text-stone-600 hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
                 <a href="/ai">AI ตรวจวินิจฉัยโรค</a>
               </li>
+
+              <div class="dropdown dropdown-end">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost rounded-btn"
+                >
+                  Dropdown
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+                >
+                  <li>
+                    <a>Item 1</a>
+                  </li>
+                  <li>
+                    <a>Item 2</a>
+                  </li>
+                  <li>
+                    <a>Item 3</a>
+                  </li>
+                  <li>
+                    <a>Item 4</a>
+                  </li>
+                </ul>
+              </div>
+
               <li class="text-stone-600 hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
                 {/* <a href="/productlist">การประเมินนโยบายสาธารณะ</a> */}
                 <a href="/productlist">การประเมินนโยบายสาธารณะ</a>
