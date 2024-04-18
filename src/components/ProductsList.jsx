@@ -19,7 +19,7 @@ const getProducts = async () => {
   }
 };
 
-export default async function ProductssList() {
+export default async function ProductsList() {
   const { products } = await getProducts();
 
   return (
@@ -35,20 +35,20 @@ export default async function ProductssList() {
             Add Product
           </Link>
         </div>
-        <table className="table">          
+        <table className="table">
           <thead>
             <tr>
               <th>
                 <label>
                   <input type="checkbox" className="checkbox" />
                 </label>
-              </th>              
+              </th>
               <th>Name</th>
               <th>Price</th>
               <th>Category</th>
-              <th />              
+              <th>Edit & Delete</th>
             </tr>
-          </thead>         
+          </thead>
           <tbody>
             {products.map((element) => (
               <tr className="hover" key={element._id}>
